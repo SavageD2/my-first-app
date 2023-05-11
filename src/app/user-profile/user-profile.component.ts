@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class UserProfileComponent implements OnInit {
 
   user = {
-    name : 'Doe',
-    firstName : 'John',
-    age : 25,
+    name : 'Howard',
+    firstName : 'Todd',
+    age : 52,
     quote : '',
-    photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
+    photo : 'https://media.tenor.com/rkI1a8s2Z6QAAAAC/todd-howard-it-just-works.gif'
   };
-  
+
   constructor() { }
 
   ngOnInit(): void {
