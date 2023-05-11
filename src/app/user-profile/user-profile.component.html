@@ -8,5 +8,10 @@
         <label for="quote">Write something : </label>
         <input [(ngModel)]="user.quote" placeholder="It Just works">
     </div>
-
+    <button (click)="displayAge()">
+        {{button}}
+    </button>
+    <div *ngIf="showAge">
+        <div><span>Age :</span> {{user.age}}</div>
+    </div>
 </div>

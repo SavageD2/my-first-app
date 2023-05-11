@@ -8,14 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class UserProfileComponent implements OnInit {
 
   user = {
-    name : 'Howard',
-    firstName : 'Todd',
-    age : 52,
+    name : 'Doe',
+    firstName : 'John',
+    age : 25,
     quote : '',
-    photo : 'https://media.tenor.com/rkI1a8s2Z6QAAAAC/todd-howard-it-just-works.gif'
+    photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
   };
 
+  showAge: boolean = false;
+  button: string = 'Show Age';
+
   constructor() { }
+
+  displayAge() {
+    this.showAge = !this.showAge;
+
+    if (this.showAge) {
+          this.button = 'Hide Age';
+        } else {
+          this.button = 'Show Age';
+        }
+  }
+
 
   ngOnInit(): void {
   }
